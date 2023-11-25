@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:VRLectureProject/Assets/Scenes/Lv1.unity.meta
 guid: 04c88a0014d1b684c901581f7c6fd5b2
 ========
 guid: 0852850f24604ac4a853a449b06f7216
 >>>>>>>> 4b863ab (움직임 구현 완료, 테스트 1레벨 씬 만드는 중):VRLectureProject/Assets/Scenes/TestFirstLevel.unity.meta
+=======
+<<<<<<<< HEAD:VRLectureProject/Assets/Scenes/Level.unity.meta
+guid: f61a163f47535d24da044aab57c0603b
+========
+guid: 04c88a0014d1b684c901581f7c6fd5b2
+>>>>>>>> sueun:VRLectureProject/Assets/Scenes/Lv1.unity.meta
+>>>>>>> e17e45442e77b2744f7053a6bfb1139359b1cc7a
 DefaultImporter:
   externalObjects: {}
   userData: 
