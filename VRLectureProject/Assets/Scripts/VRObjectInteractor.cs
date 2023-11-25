@@ -7,6 +7,8 @@ public class VRObjectInteractor : MonoBehaviour
     public LayerMask itemLayer; // "item" 레이어를 가리키는 레이어 마스크
     public float maxRayDistance = 5f; // Raycast의 최대 거리
     public GameObject otherObject; // 다른 오브젝트의 참조
+    public ScoreManager scoreScript;
+    public EnableAndTextChange clear;
 
     private GameObject targetedObject; // 현재 조준하고 있는 오브젝트
 
@@ -47,6 +49,18 @@ public class VRObjectInteractor : MonoBehaviour
             if (script != null)
             {
                 script.AddScore(1);
+            }
+        }
+
+        if (scoreScript != null)
+        {
+            int score = scoreScript.GetScore();
+            if (score == 5)
+            {
+                if (clear != null)
+                {
+                    clear.ActivateObjectAndChangeText();
+                }
             }
         }
     }
