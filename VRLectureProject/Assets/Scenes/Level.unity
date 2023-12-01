@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74328d3384ede9a46a2fa3457193224b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToLoad: Lv3
+  sceneNameToLoad: Lv2
   audioSource: {fileID: 539260961}
   audioClip: {fileID: 8300000, guid: 808b1c1bb474b2e4e81f482b61c5af1f, type: 3}
 --- !u!1 &1075720208
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74328d3384ede9a46a2fa3457193224b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToLoad: Lv5
+  sceneNameToLoad: Lv3
   audioSource: {fileID: 539260961}
   audioClip: {fileID: 8300000, guid: 808b1c1bb474b2e4e81f482b61c5af1f, type: 3}
 --- !u!1 &1392366374

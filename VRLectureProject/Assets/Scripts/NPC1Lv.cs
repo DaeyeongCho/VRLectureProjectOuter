@@ -21,6 +21,9 @@ public class NPCInteraction : MonoBehaviour
     public AudioSource audioSource; // 오디오 소스 컴포넌트에 대한 참조
     public AudioClip audioClip; // 재생할 오디오 클립
 
+    public GameObject otherObject; // 다른 오브젝트
+    public string functionName; // 실행 할 함수 이름
+
     public void Interact()
     {
         switch (interactionCount)
@@ -30,11 +33,11 @@ public class NPCInteraction : MonoBehaviour
                 interactionCount++;
                 break;
             case 2:
-                textComponent.text = "나는 npc야.";
+                textComponent.text = "꼬마버섯 친구들이 사라졌어!";
                 interactionCount++;
                 break;
             case 3:
-                textComponent.text = "미션을 클리어해 줘!";
+                textComponent.text = "꼬마버섯 5마리를 찾아 줘!!";
                 interactionCount++;
                 break;
             case 4:
@@ -44,12 +47,12 @@ public class NPCInteraction : MonoBehaviour
             case 5:
                 if (CheckMissionCompleted()) // 미션 완료 여부 확인
                 {
-                    textComponent.text = "고마워!";
+                    textComponent.text = "성공했구나!";
                     interactionCount++; // 미션 완료 시 다음 상태로 넘어감
                 }
                 else
                 {
-                    textComponent.text = "미션을 아직 완료하지 못했어!";
+                    textComponent.text = "아직 꼬마버섯 친구들을 모두 찾지 못했어!";
                     // 여기서 interactionCount를 증가시키지 않음
                 }
                 break;
@@ -58,7 +61,7 @@ public class NPCInteraction : MonoBehaviour
                 interactionCount++;
                 break;
             case 7:
-                textComponent.text = "덕분에 일이 잘 해결됐어.";
+                textComponent.text = "덕분에 친구들을 찾았어!";
                 interactionCount++;
                 break;
             case 8:
@@ -83,6 +86,10 @@ public class NPCInteraction : MonoBehaviour
         {
             secondObjectToActivate.SetActive(true);
         }
+
+        // 다른 오브젝트의 함수 실행
+        if (otherObject != null && !string.IsNullOrEmpty(functionName))
+            otherObject.SendMessage(functionName, SendMessageOptions.DontRequireReceiver);
     }
 
     private bool CheckMissionCompleted()
