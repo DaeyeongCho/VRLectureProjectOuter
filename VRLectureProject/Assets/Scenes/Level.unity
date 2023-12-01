@@ -640,6 +640,7 @@ GameObject:
   - component: {fileID: 883755892}
   - component: {fileID: 883755891}
   - component: {fileID: 883755890}
+  - component: {fileID: 883755893}
   m_Layer: 5
   m_Name: ButtonL2
   m_TagString: Untagged
@@ -710,7 +711,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 883755891}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 883755893}
+        m_TargetAssemblyTypeName: UIButtonClick, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &883755891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +762,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883755888}
   m_CullTransparentMesh: 1
+--- !u!114 &883755893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883755888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74328d3384ede9a46a2fa3457193224b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameToLoad: Lv3
+  audioSource: {fileID: 539260961}
+  audioClip: {fileID: 8300000, guid: 808b1c1bb474b2e4e81f482b61c5af1f, type: 3}
 --- !u!1 &1075720208
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74328d3384ede9a46a2fa3457193224b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToLoad: TestFirstLevel
+  sceneNameToLoad: Lv1
   audioSource: {fileID: 539260961}
   audioClip: {fileID: 8300000, guid: 808b1c1bb474b2e4e81f482b61c5af1f, type: 3}
 --- !u!1 &1084404686
@@ -1246,6 +1274,7 @@ GameObject:
   - component: {fileID: 1371079360}
   - component: {fileID: 1371079359}
   - component: {fileID: 1371079358}
+  - component: {fileID: 1371079361}
   m_Layer: 5
   m_Name: ButtonL3
   m_TagString: Untagged
@@ -1316,7 +1345,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1371079359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1371079361}
+        m_TargetAssemblyTypeName: UIButtonClick, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1371079359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,6 +1396,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371079356}
   m_CullTransparentMesh: 1
+--- !u!114 &1371079361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371079356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74328d3384ede9a46a2fa3457193224b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameToLoad: Lv5
+  audioSource: {fileID: 539260961}
+  audioClip: {fileID: 8300000, guid: 808b1c1bb474b2e4e81f482b61c5af1f, type: 3}
 --- !u!1 &1392366374
 GameObject:
   m_ObjectHideFlags: 0

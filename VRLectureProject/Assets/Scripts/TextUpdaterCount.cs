@@ -1,0 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro; // TextMeshPro 네임스페이스를 사용합니다.
+
+public class TextUpdaterCount : MonoBehaviour
+{
+    public TextMeshProUGUI textComponent; // TextMeshProUGUI 컴포넌트에 대한 참조
+    private int count = 0;
+
+    public GameObject otherObject;
+    public string functionName;
+
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
+    // 텍스트를 업데이트하는 메서드
+    public void setCount()
+    {
+        if (textComponent != null)
+        {
+            count++;
+            textComponent.text = "찾은 개수: " + count;
+        }
+
+        if (count >= 5) {
+            if (otherObject != null && !string.IsNullOrEmpty(functionName))
+            {
+                otherObject.SendMessage(functionName);
+            }
+
+            if (audioSource != null && audioClip != null)
+            {
+                audioSource.PlayOneShot(audioClip);
+            }
+        }
+    }
+}

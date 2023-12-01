@@ -16,7 +16,6 @@ public class VRControllerInput : MonoBehaviour
             if (isPressed)
             {
                 // 여기에 버튼이 눌렸을 때 실행할 로직을 추가합니다.
-                Debug.Log("Button Pressed");
             }
         }
     }
