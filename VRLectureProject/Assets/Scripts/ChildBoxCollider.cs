@@ -12,7 +12,7 @@ public class ChildBoxCollider : MonoBehaviour
             BoxCollider collider = child.gameObject.AddComponent<BoxCollider>();
 
             // 프리팹의 이름에 따라 BoxCollider의 Y축 크기를 조정합니다.
-            if (child.gameObject.name == "Tile_Road_Edge_End_Solo"
+/*            if (child.gameObject.name == "Tile_Road_Edge_End_Solo"
                 || child.gameObject.name == "Tile_Road_End"
                 || child.gameObject.name == "Tile_Road_End_Edge"
                 || child.gameObject.name == "Tile_Road_Inner_Corner_3_Edge"
@@ -22,7 +22,7 @@ public class ChildBoxCollider : MonoBehaviour
                 Vector3 size = collider.size;
                 size.y = 1.76f; // Y축 크기를 1.76으로 설정합니다.
                 collider.size = size;
-            }
+            }*/
             // 그 외의 경우, BoxCollider의 기본 크기를 유지합니다.
         }
     }

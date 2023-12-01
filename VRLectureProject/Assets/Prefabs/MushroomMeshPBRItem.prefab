@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a736566565a0467eb2ba23a7007ba560, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8419425
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a736566565a0467eb2ba23a7007ba560, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3820806
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a736566565a0467eb2ba23a7007ba560, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.580146
+      value: -5.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a736566565a0467eb2ba23a7007ba560, type: 3}
       propertyPath: m_LocalRotation.w
@@ -155,6 +155,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a736566565a0467eb2ba23a7007ba560, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7165090259419094491}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a736566565a0467eb2ba23a7007ba560, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5537228537393612455}
   m_SourcePrefab: {fileID: 100100000, guid: a736566565a0467eb2ba23a7007ba560, type: 3}
 --- !u!1 &8002747067456962474 stripped
 GameObject:
@@ -182,3 +185,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &5537228537393612455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002747067456962474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857d0db5b56c9894eb2ce8856cd90758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 8002747067456962474}
+  maxRayDistance: 1.5
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 0b2dc3f8bd139b04d9328ed800a6a70c, type: 3}
+  objectToActivate: {fileID: 0}
+  objectToNoneActivate: {fileID: 0}
+  otherObject: {fileID: 0}
+  functionName: setCount
+  effectPrefab: {fileID: 3384366999043453948, guid: 7c19ad7a926fc084ea69d9ba4fedeeab, type: 3}
+  effectScale: {x: 0.1, y: 0.1, z: 0.1}
+  effectOffset: {x: 0, y: 0, z: 0}
+  destroyTargetObject: 1
+  leftController: {fileID: 0}
+  rightController: {fileID: 0}

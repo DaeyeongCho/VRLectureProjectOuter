@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<<< HEAD:VRLectureProject/Assets/Scenes/Lv1.unity.meta
+<<<<<<< HEAD
 guid: 4982ce76cc62e8542a2feca66d810cfa
+=======
+guid: e83b33ea7d604734b9422851aa237063
+>>>>>>> 466c3281528192ea5ac09956da5b2990753aa9ba
 ========
 guid: 0852850f24604ac4a853a449b06f7216
 >>>>>>>> 4b863ab (움직임 구현 완료, 테스트 1레벨 씬 만드는 중):VRLectureProject/Assets/Scenes/TestFirstLevel.unity.meta
