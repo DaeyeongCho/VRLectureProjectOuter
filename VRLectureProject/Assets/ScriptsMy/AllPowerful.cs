@@ -45,9 +45,10 @@ public class CustomActionScript : MonoBehaviour
             otherObject.SendMessage(functionName, SendMessageOptions.DontRequireReceiver);
 
         // 이펙트 생성 및 제거
-        if (effectPrefab != null)
+        if (effectPrefab != null && targetObject != null)
         {
-            GameObject effect = Instantiate(effectPrefab, effectPosition, Quaternion.identity);
+            Vector3 relativeEffectPosition = targetObject.transform.position + effectPosition;
+            GameObject effect = Instantiate(effectPrefab, relativeEffectPosition, Quaternion.identity);
             effect.transform.localScale = new Vector3(effectSize, effectSize, effectSize);
             Destroy(effect, effectDuration);
         }

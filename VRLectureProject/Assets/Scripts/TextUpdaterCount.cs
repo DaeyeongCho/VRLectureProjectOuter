@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro; // TextMeshPro 네임스페이스를 사용합니다.
+using Oculus.Interaction;
 
 public class TextUpdaterCount : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class TextUpdaterCount : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip audioClip;
+
+    public GameObject otherObject2; // 다른 오브젝트
+    public string functionName2; // 실행 할 함수 이름
 
     // 텍스트를 업데이트하는 메서드
     public void setCount()
@@ -33,6 +37,10 @@ public class TextUpdaterCount : MonoBehaviour
             {
                 audioSource.PlayOneShot(audioClip);
             }
+
+            // 다른 오브젝트의 함수 실행
+            if (otherObject2 != null && !string.IsNullOrEmpty(functionName2))
+                otherObject2.SendMessage(functionName2, SendMessageOptions.DontRequireReceiver);
         }
     }
 }
